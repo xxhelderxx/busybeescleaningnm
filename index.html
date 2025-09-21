@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Busy Bees – Time to Clean</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Busy Bees Cleaning — reliable, friendly residential & small office cleaning. One-time, recurring, move-in/out. Call now for a free quote." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      /* Brand palette inspired by logo */
+      --bg:#fff;
+      --ink:#1b1e22;
+      --muted:#5c6675;
+      --bee-yellow:#FFC107;
+      --bee-orange:#FF8A00;
+      --bee-purple:#7B3FE4;
+      --bee-green:#2ec27e;
+      --bee-teal:#22B8CF;
+      --card:#ffffff;
+      --line:#e9edf2;
+      --radius:18px;
+      --shadow:0 10px 30px rgba(0,0,0,.08)
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,Segoe UI,Roboto,Arial}
+    img{max-width:100%;display:block}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1050px,92vw);margin:0 auto}
+    /* Header */
+    header{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line);z-index:5}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:14px}
+    .brand img{height:56px;width:auto}
+    .brand h1{font:600 22px/1 Fredoka;margin:0}
+    .cta{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:12px 16px;border-radius:999px;font-weight:600;background:var(--bee-purple);color:#fff;box-shadow:var(--shadow)}
+    .btn--ghost{background:transparent;border:2px solid var(--bee-purple);color:var(--bee-purple)}
+    /* Hero */
+    .hero{padding:40px 0;background:
+      radial-gradient(1200px 300px at 40% -50%, rgba(255,193,7,.25), transparent 60%),
+      radial-gradient(900px 240px at 80% -40%, rgba(34,184,207,.20), transparent 60%)}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center}
+    .kicker{display:inline-block;font:600 14px/1 Fredoka;background:linear-gradient(90deg,var(--bee-orange),var(--bee-yellow));-webkit-background-clip:text;background-clip:text;color:transparent}
+    h2,h3{font-family:Fredoka;margin:0 0 8px}
+    h2{font-weight:600;font-size:clamp(28px,4.8vw,42px);line-height:1.1}
+    .lead{color:var(--muted);font-size:1.05rem;margin:10px 0 16px}
+    .badge-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+    .badge{background:#fff;border:1px dashed var(--bee-teal);color:var(--bee-teal);padding:6px 10px;border-radius:999px;font-weight:600;font-size:.9rem}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+    /* Sections */
+    section{padding:40px 0}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .service{border-left:6px solid var(--bee-yellow)}
+    .service h3{margin-top:0}
+    ul{margin:0;padding-left:18px}
+    /* Testimonials */
+    .quote{position:relative;padding-left:40px}
+    .quote:before{content:"“";position:absolute;left:10px;top:-10px;font:700 48px/1 Georgia;color:var(--bee-purple);opacity:.2}
+    .stars{color:#FFB703;font-size:18px;letter-spacing:2px}
+    /* Gallery */
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+    .gallery div{aspect-ratio:1/1;border-radius:12px;background:#f4f6f8;border:1px solid var(--line);display:grid;place-items:center;color:var(--muted)}
+    /* Contact strip */
+    .contact{background:linear-gradient(90deg,var(--bee-yellow),var(--bee-orange));color:#222}
+    .contact .btn{background:#111;color:#fff;border:0}
+    /* Floating call button (mobile) */
+    .call-fab{position:fixed;right:16px;bottom:16px;background:var(--bee-green);color:#fff;border-radius:999px;padding:12px 16px;font-weight:700;box-shadow:var(--shadow);display:none}
+    @media (max-width:900px){.hero-grid,.grid-3,.grid-2{grid-template-columns:1fr}}
+    @media (max-width:720px){.call-fab{display:inline-block}}
+    footer{border-top:1px solid var(--line);padding:20px 0;color:var(--muted);font-size:.9rem}
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="wrap nav">
+      <div class="brand">
+        <!-- Put your logo file as logo.png next to index.html -->
+        <img src="logo.png" alt="Busy Bees Cleaning logo">
+        <h1>Busy Bees Cleaning</h1>
+      </div>
+      <div class="cta">
+        <a class="btn--ghost btn" href="#services">Services</a>
+        <!-- Replace phone number -->
+        <a class="btn" href="tel:+15555551234">Call Now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="kicker">Sparkling homes • Happy clients</span>
+        <h2>Friendly, reliable cleaning that makes your space *shine*.</h2>
+        <p class="lead">One-time deep cleans, recurring maintenance, move-in/out, and small offices. Flexible scheduling, supplies included, and 100% satisfaction guaranteed.</p>
+        <div class="badge-row">
+          <span class="badge">Licensed & Insured</span>
+          <span class="badge">Pet-friendly</span>
+          <span class="badge">Eco options</span>
+        </div>
+        <div style="margin-top:14px" class="cta">
+          <a class="btn" href="tel:+15555551234">📞 Get a Free Quote</a>
+          <!-- Replace with your public Google reviews link -->
+          <a class="btn--ghost btn" href="https://maps.google.com?q=your+business+reviews" target="_blank" rel="noopener">⭐ Read Google Reviews</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0">What we handle</h3>
+        <ul>
+          <li>Kitchens & appliances (inside microwave, outside fridge)</li>
+          <li>Bathrooms (tile, tubs, glass, fixtures)</li>
+          <li>Dusting, baseboards, windowsills, ceiling fans</li>
+          <li>Floors (vacuum & mop), tidy & trash removal</li>
+          <li>Move-in/out & post-construction add-ons</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="wrap grid-3">
+      <div class="card service">
+        <h3>Recurring Cleaning</h3>
+        <p class="muted">Weekly, bi-weekly, or monthly visits to keep everything fresh.</p>
+        <ul>
+          <li>Kitchen & bath detail</li>
+          <li>Dust, floors, tidy</li>
+          <li>Custom checklist</li>
+        </ul>
+      </div>
+      <div class="card service" style="border-left-color: var(--bee-teal);">
+        <h3>Deep Cleaning</h3>
+        <p class="muted">Top-to-bottom reset for seasonal refreshes and special occasions.</p>
+        <ul>
+          <li>Baseboards & blinds</li>
+          <li>Behind & under appliances</li>
+          <li>Extra detail everywhere</li>
+        </ul>
+      </div>
+      <div class="card service" style="border-left-color: var(--bee-purple);">
+        <h3>Move-In/Out</h3>
+        <p class="muted">Make moving day easy with a spotless start or finish.</p>
+        <ul>
+          <li>Cabinets & drawers inside</li>
+          <li>Appliances inside/out</li>
+          <li>Final walkthrough ready</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section>
+    <div class="wrap grid-3">
+      <div class="card quote">
+        <div class="stars">★★★★★</div>
+        “They went above and beyond—our kitchen has never looked better.”
+        <div class="muted">— Maria L.</div>
+      </div>
+      <div class="card quote">
+        <div class="stars">★★★★★</div>
+        “On time, professional, and great with our dog. Highly recommend!”
+        <div class="muted">— James P.</div>
+      </div>
+      <div class="card quote">
+        <div class="stars">★★★★★</div>
+        “Reliable service every two weeks. It’s a lifesaver for our family.”
+        <div class="muted">— Danielle R.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Reviews (optional embed) -->
+  <section>
+    <div class="wrap card">
+      <h3 style="margin-top:0">What customers are saying on Google</h3>
+      <p class="muted" style="margin-top:0">Don’t just take our word for it—read real reviews.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <a class="btn" href="https://maps.google.com?q=your+business+reviews" target="_blank" rel="noopener">Open Google Reviews</a>
+        <a class="btn btn--ghost" href="mailto:hello@busybeesclean.com">Request references</a>
+      </div>
+
+      <!--
+        OPTIONAL EMBED (requires Google Places API & a Place ID):
+        1) Create a Places API key and restrict it.
+        2) Replace YOUR_API_KEY and YOUR_PLACE_ID below, then uncomment.
+
+      <div id="reviews" style="margin-top:16px"></div>
+      <script>
+        // Minimal example using Places Library (Text Search + details)
+        function initReviews(){
+          const service = new google.maps.places.PlacesService(document.createElement('div'));
+          service.getDetails({placeId:'YOUR_PLACE_ID', fields:['reviews','rating','user_ratings_total','name']}, (place,status)=>{
+            if(status!=='OK'||!place?.reviews){ return; }
+            const el=document.getElementById('reviews');
+            el.innerHTML = place.reviews.slice(0,3).map(r=>`
+              <div class="card" style="margin-top:12px">
+                <div class="stars">★★★★★</div>
+                <div style="margin-top:6px">${r.text}</div>
+                <div class="muted" style="margin-top:6px">— ${r.author_name}</div>
+              </div>`).join('');
+          });
+        }
+      </script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&callback=initReviews"></script>
+      -->
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section>
+    <div class="wrap">
+      <h3>Before & After</h3>
+      <p class="muted" style="margin-top:0">Swap these placeholders with your photos (drag them into the repo’s <em>images/</em> folder).</p>
+      <div class="gallery">
+        <div>Photo 1</div><div>Photo 2</div><div>Photo 3</div>
+        <div>Photo 4</div><div>Photo 5</div><div>Photo 6</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / CTA -->
+  <section class="contact">
+    <div class="wrap card" style="background:#fff;border-color:#ffd77a">
+      <h3 style="margin:0 0 6px">Ready for a spotless space?</h3>
+      <p class="muted" style="margin:0 0 12px">Text or call for a quick quote. We bring the supplies—eco options available.</p>
+      <div class="cta">
+        <a class="btn" href="tel:+15555551234">📞 Call (555) 555-1234</a>
+        <a class="btn btn--ghost" href="sms:+15555551234?&body=Hi%20Busy%20Bees!%20I%E2%80%99d%20like%20a%20cleaning%20quote.">💬 Text Us</a>
+        <a class="btn btn--ghost" href="mailto:hello@busybeesclean.com"✉️ Email</a>
+      </div>
+    </div>
+  </section>
+
+  <a class="call-fab" href="tel:+15555551234">Call Busy Bees</a>
+
+  <footer>
+    <div class="wrap">© <span id="yr"></span> Busy Bees Cleaning • Licensed & Insured</div>
+  </footer>
+  <script>document.getElementById('yr').textContent=new Date().getFullYear()</script>
+</body>
+</html>
+
+
