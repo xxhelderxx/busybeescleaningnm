@@ -45,7 +45,21 @@
 
     .brand h1{font:600 22px/1 Fredoka;margin:0}
     .cta{display:flex;gap:10px;flex-wrap:wrap}
-    .btn{display:inline-block;padding:12px 16px;border-radius:999px;font-weight:600;background:var(--bee-purple);color:#fff;box-shadow:var(--shadow)}
+    .btn{
+  display:inline-flex;              /* keeps icon/text aligned */
+  align-items:center;
+  gap:8px;                          /* spacing for future icons */
+  padding:12px 16px;
+  border-radius:999px;
+  font-weight:600;
+  background:var(--bee-purple);
+  color:#fff;
+  box-shadow:var(--shadow);
+  border:0;
+  overflow:hidden;                  /* prevents glyph spill */
+  position:relative;
+}
+
     .btn--ghost{background:transparent;border:2px solid var(--bee-purple);color:var(--bee-purple)}
     /* Hero */
     .hero{padding:40px 0;background:
